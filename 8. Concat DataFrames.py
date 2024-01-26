@@ -37,7 +37,7 @@ print(df) #It gives NaN values to the missing cells
 
 #To avoid this we can 
 df = pd.concat([temperature_df,windspeed_df],axis=1) #Without using axis they will mark them as column but still not correct as city name have two columns
-print(df)
+print(df)                                            #We will see them at merge
 s=pd.Series(["Humid","Dry","Rainy"],name='event')
 df=pd.concat([temperature_df,s],axis=1)
 print(df)
